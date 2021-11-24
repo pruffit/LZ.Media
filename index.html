@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="container-left">
+                <div class="intro-signin-signup">
+                    <div class="intro-signin-signup-text">
+                        <h1>Lorem Ipsum is simply </h1>
+                        <h2>Lorem Ipsum is simply </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="form-container">
+                    <form id="login-form" class="display" action="#">
+                        <h2 class="title">Welcome to lorem..!</h2>
+                        <div class="signin-signup-container">
+                            <button class="btn active">Login</button>
+                            <button class="btn" id="register">Register</button>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <span class="label">User name</span>
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your User name">
+                        </div>
+                        <span class="label">Password</span>
+                        <div class="input-field not-mb">
+                            <input type="password" id="password-input" name="password" placeholder="Enter your Password">
+                            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                        </div>
+                        <a class="forgot" href="#">Forgot Password ?</a>
+                        <div class="btn-right">
+                            <button class="btn btn-big">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-container">
+                    <form id="register-form" action="#">
+                        <h2 class="title">Welcome to lorem..!</h2>
+                        <div class="signin-signup-container">
+                            <button class="btn" id="login">Login</button>
+                            <button class="btn active">Register</button>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <span class="label">Email Address</span>
+                        <div class="input-field">
+                            <input type="email" placeholder="Enter your Email Address">
+                        </div>
+                        <span class="label">User name</span>
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your User name">
+                        </div>
+                        <span class="label">Password</span>
+                        <div class="input-field not-mb">
+                            <input type="password" id="password-input" name="password" placeholder="Enter your Password">
+                            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                        </div>
+                        <div class="btn-right">
+                            <button class="btn btn-big">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
