@@ -21,7 +21,7 @@
             </div>
             <div class="container-right">
                 <div class="form-container">
-                    <form id="login-form" class="display" action="#">
+                    <form id="login-form" class="display" action="/login" method="post">
                         <h2 class="title">Welcome to lorem..!</h2>
                         <div class="signin-signup-container">
                             <button class="btn active">Login</button>
@@ -30,11 +30,11 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <span class="label">User name</span>
                         <div class="input-field">
-                            <input type="text" placeholder="Enter your User name">
+                            <input type="text" placeholder="Enter your User name" minlength="2" maxlength="50" required>
                         </div>
                         <span class="label">Password</span>
                         <div class="input-field not-mb">
-                            <input type="password" id="password-input" name="password" placeholder="Enter your Password">
+                            <input type="password" id="password-input" name="password" placeholder="Enter your Password" minlength="8" required>
                             <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
                         </div>
                         <a class="forgot" href="#">Forgot Password ?</a>
@@ -44,7 +44,7 @@
                     </form>
                 </div>
                 <div class="form-container">
-                    <form id="register-form" action="#">
+                    <form id="register-form" action="/register" method="post">
                         <h2 class="title">Welcome to lorem..!</h2>
                         <div class="signin-signup-container">
                             <button class="btn" id="login">Login</button>
@@ -53,15 +53,15 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <span class="label">Email Address</span>
                         <div class="input-field">
-                            <input type="email" placeholder="Enter your Email Address">
+                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your Email Address" required>
                         </div>
                         <span class="label">User name</span>
                         <div class="input-field">
-                            <input type="text" placeholder="Enter your User name">
+                            <input type="text" placeholder="Enter your User name" minlength="2" maxlength="50" required>
                         </div>
                         <span class="label">Password</span>
                         <div class="input-field not-mb">
-                            <input type="password" id="password-input" name="password" placeholder="Enter your Password">
+                            <input type="password" id="password-input" name="password" placeholder="Enter your Password" minlength="8" required>
                             <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
                         </div>
                         <div class="btn-right">

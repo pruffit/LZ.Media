@@ -90,6 +90,7 @@ p{
     flex-direction: column;
     text-align: center;
     width: 46%;
+    transition: all .5s linear;
 }
 
 .forms-container{
@@ -105,15 +106,14 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 90px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    transition: all .5s linear;
+    z-index: 1;
 }
 
 .display{
     display: flex;
-    transition: all .5s linear;
+    padding: 0 90px;
 }
 
 .title{
